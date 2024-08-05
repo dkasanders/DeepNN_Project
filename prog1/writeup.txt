@@ -1,0 +1,18 @@
+1) Dylan Kasanders
+
+2) I implemented every feature outlined on the assignment. 
+
+3) Based on my assessment, there isn't anything that "isn't working" per se. Rather, I would say that the accuracy percentage is lower than I would have anticipated. 
+My model is good at reducing loss, however it isn't accurate on properly classifying. Looking into this, I noticed that the data points it falsely classified had output vector
+values that were all close together. For example, a binary classifier may have had a value like [0.492, 0.498]. This isn't inherently a bad thing, as ultimately the neural 
+network is using loss in order to fine-tune it's hyperparameters. Having all of the values in the output vector be close to each other seems to be the way the model is choosing
+to minimize loss. If I had more time, I would look more if exploding/vanishing gradients are occurring in the training process and the implement solutions to prevent that.
+
+4) Writing the program, I worked from the bottom-up. I started with being able to create a neural network with initialized weights and biases, then being able to feedforward, calculate loss, etc. A lot of the project built upon itself, so I was able to justify a component working based on something else working. (I knew my weights and biases were initialized correctly because my feedforward was working, for example) When I was able to definitively predetermine the output a part of my program should return, I would test it. 
+
+5) I found the more challenging aspects of this project to be the actual implementation of the neural network, rather than understanding how the neural network worked or if my implementation was correct. A lot of the issues I kept running into were from NumPy and the matmul function. I would continually get issues with invalid matrix shapes.
+
+6) With minibatch training, I noticed that as we decreased the size of the minibatch, the runtime took longer. For dataset2, it took 0.303 seconds to train w/ mb=64, 0.403 
+seconds to train with mb=32, and 0.782 seconds to train w/ SGD. However with smaller minibatches there was less loss on the training set. 
+
+7) I noticed that as you increased the number of layers both the loss on the training and dev set decreased. This surprised me, as I was anticipating decreased loss on the training set but not expecting the dev set to be as affected. The neural network is explicitly working to decrease the average loss on the training set, but seeing that translate into decreased loss on the development set to the extent it did surprised me. Having more layers for a neural network gives it the ability to better model complexities within the data and more abstract features of the data.

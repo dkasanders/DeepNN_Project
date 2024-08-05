@@ -1,0 +1,8 @@
+1) In this project, we are tasked with creating a deep neural network. This deep neural network should support both a single hidden layer NN and an arbitrarily deep NN. The neural network should support classification and regression and minibatch training. To implement this NN, we will be utilizing NumPy for a lot of functionalities regarding matricies. This project also includes a writeup detailing our accopmlishments on the project and things we were unable to successfuly implement.
+
+2) I anticipate implementing the gradients utilizing the chain rule to be the most difficult aspect of this project. It may be tricky to debug as there's multiple derivatives needed to be calculated.
+
+3) I do most of my work in the mornings, and will be dedicating a little bit of time everyday on this project.
+
+4) The lecture videos on NN, online resources about how NN work, and the textbook for this class.
+
